@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name:
+
+  profiles:
+    active: no-auth
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 
+    username: 
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  default-produces-media-type: application/json
+
